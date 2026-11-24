@@ -1,0 +1,27 @@
+
+# Generated files
+build/
+dist/
+
+# NetBeans private configuration
+nbproject/private/
+
+# Compiled files
+*.class
+
+# Logs
+*.log
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db

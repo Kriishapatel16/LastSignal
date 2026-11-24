@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            LastSignal | Safety Check-in System
+        </title>
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body {
+            font-family: Arial, sans-serif;
+            background: #f7f6f1;
+            color: #30372d;
+            min-height: 100vh;
+            }
+            header {
+            height: 85px;
+            padding: 0 8%;
+            display: flex;
+            align-items: center;
+            }
+            .logo {
+            font-size: 27px;
+            font-weight: bold;
+            color: #526049;
+            letter-spacing: 0.5px;
+            }
+            main {
+            min-height: calc(100vh - 145px);
+            padding: 35px 8%;
+            display: flex;
+            align-items: center;
+            }
+            .hero {
+            width: 100%;
+            min-height: 650px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 50px;
+            padding: 70px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 35px rgba(40, 45, 35, 0.05);
+            }
+            .tagline {
+            display: inline-block;
+            padding: 9px 16px;
+            background: #eef1e9;
+            color: #526049;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 28px;
+            }
+            h1 {
+            font-size: clamp(42px, 5vw, 62px);
+            line-height: 1.15;
+            margin-bottom: 22px;
+            }
+            h1 span {
+            color: #657458;
+            }
+            .description {
+            max-width: 540px;
+            color: #74776f;
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 35px;
+            }
+            .actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            }
+            .btn {
+            display: inline-block;
+            min-width: 155px;
+            padding: 15px 27px;
+            text-align: center;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.2s ease;
+            }
+            .btn-primary {
+            background: #526049;
+            color: white;
+            }
+            .btn-primary:hover {
+            background: #3e4937;
+            }
+            .btn-secondary {
+            background: #eef1e9;
+            color: #414b3a;
+            }
+            .btn-secondary:hover {
+            background: #e1e6da;
+            }
+            .visual {
+            min-height: 460px;
+            background: #f2f4ed;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 35px;
+            }
+            .visual-content {
+            max-width: 350px;
+            text-align: center;
+            }
+            .shield {
+            width: 115px;
+            height: 115px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: #dfe6d7;
+            color: #526049;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+            }
+            .visual-content h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #414b3a;
+            }
+            .visual-content p {
+            color: #777b72;
+            font-size: 15px;
+            line-height: 1.9;
+            }
+            footer {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            color: #888b83;
+            font-size: 13px;
+            }
+            @media (max-width: 850px) {
+            main {
+            padding: 25px 5%;
+            }
+            .hero {
+            grid-template-columns: 1fr;
+            padding: 45px 30px;
+            gap: 40px;
+            }
+            .visual {
+            min-height: 300px;
+            }
+            }
+            @media (max-width: 500px) {
+            header {
+            padding: 0 6%;
+            }
+            .hero {
+            padding: 35px 22px;
+            }
+            h1 {
+            font-size: 39px;
+            }
+            .description {
+            font-size: 15px;
+            }
+            .actions {
+            flex-direction: column;
+            }
+            .btn {
+            width: 100%;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                LastSignal
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <span class="tagline">
+                        A Simple Safety Check-in System
+                    </span>
+                    <h1>
+                        Your Safety.
+                        <br>
+                        Your
+                        <span>
+                            Peace of Mind.
+                        </span>
+                    </h1>
+                    <p class="description">
+                        LastSignal helps you stay connected with your
+                        trusted contacts through regular safety check-ins.
+                        If you miss a check-in and its configured grace
+                        period expires, your trusted contacts can be notified.
+                    </p>
+                    <div class="actions">
+                        <a href="register.jsp" class="btn btn-primary">
+                            Create Account
+                        </a>
+                        <a href="login.jsp" class="btn btn-secondary">
+                            Login
+                        </a>
+                    </div>
+                </div>
+                <div class="visual">
+                    <div class="visual-content">
+                        <div class="shield">
+                            &#10003;
+                        </div>
+                        <h2>
+                            Stay Connected
+                        </h2>
+                        <p>
+                            Set your check-in schedule, confirm that
+                            you are safe, and keep your trusted contacts
+                            informed when a check-in is missed.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy; 2026 LastSignal. All rights reserved.
+        </footer>
+    </body>
+</html>
